@@ -210,7 +210,7 @@ def team_part_info_team(request):
     if request.method == "GET":
         if team.status == "待审核":
             return redirect(reverse("team:savesubmit"))
-        elif team.status == "待完善信息":
+        elif (team.status == "待完善信息" | team.status == "退回"):
             return render(request, 'info-team.html', locals())
     elif request.method == 'POST':
         teamInfoForm = forms.TeamChangeInfoForm(request.POST)

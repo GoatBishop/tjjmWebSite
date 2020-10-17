@@ -265,6 +265,7 @@ def tuihui(request, work_id):
 #    back_username = session_back['username']
     team = models.Team.objects.get(work_id = work_id)
     team.status_is_submit = "退回"
+    team.status = "退回"
     team.save()
     return redirect(reverse('back:worklist'))
 
