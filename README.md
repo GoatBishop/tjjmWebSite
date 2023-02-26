@@ -1,35 +1,23 @@
 
 
-### 说明
+### Description
+
+
+This is a template for a university competition website written using the Django framework.
+
+The template contains a team section, a college section, a jury section and an administrator section.
 
 
 
-此项目有后台管理、团队、评审、院校4个模块。
-
-
-
-
-
-### 环境
+### Environment
 
 ```
-python3.6
-Django2.2
+python==3.6
+django==2.2.13
+pymysql
+mysqlclient
+```
+
+```
 mysql5.6
 ```
-
-
-
-
-
-### 所需python库
-
-
-
-```
-python -m pip install --upgrade pip -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
-pip install -i https://pypi.tuna.tsinghua.edu.cn/simple django==2.2.13
-pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pymysql
-pip install -i https://pypi.tuna.tsinghua.edu.cn/simple mysqlclient
-```
-
